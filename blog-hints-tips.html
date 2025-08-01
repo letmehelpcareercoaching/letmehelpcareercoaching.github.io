@@ -60,6 +60,7 @@
       font-weight: bold;
       margin-top: 1rem;
       white-space: pre-wrap;
+      min-height: 200px; /* optional: gives space so page doesn't jump */
     }
     button.back-btn {
       background-color: #7ba591;
@@ -69,7 +70,7 @@
       padding: 0.6rem 1.2rem;
       cursor: pointer;
       font-size: 1rem;
-      margin-top: 2rem;
+      margin-bottom: 1.5rem;
       display: inline-block;
     }
     button.back-btn:hover {
@@ -102,7 +103,7 @@
     </div>
 
     <div id="tip-content">
-      <!-- Tip content appears here -->
+      <!-- Tip content will appear here only after button click -->
     </div>
   </section>
 
@@ -131,9 +132,6 @@
     function showTip(index) {
       document.getElementById('tip-content').innerText = tips[index];
     }
-
-    // Show first tip by default
-    showTip(0);
   </script>
 </body>
 </html>
