@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Career Tips and Advice | Let Me Help Coaching</title>
-  <meta name="description" content="Browse practical career tips to help you succeed in your job search or career change." />
+  <title>Career Tips | Let Me Help Career and Life Coaching</title>
+  <meta name="description" content="Helpful career tips to boost your job search and career success from Let Me Help Career Coaching." />
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
@@ -39,24 +39,40 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
-    .button-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .tip-button {
-      display: inline-block;
-      padding: 1rem;
+    button {
+      padding: 0.5rem 1rem;
+      margin-right: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: none;
       background-color: #7ba591;
       color: white;
-      text-decoration: none;
-      font-size: 1.1rem;
-      border-radius: 8px;
-      text-align: center;
-      transition: background 0.3s;
+      cursor: pointer;
+      font-size: 1rem;
     }
-    .tip-button:hover {
+    button:hover {
+      background-color: #5c7a6a;
+    }
+    #tip-content {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #3e6259;
+      font-weight: bold;
+      margin-top: 1rem;
+      white-space: pre-wrap;
+    }
+    button.back-btn {
+      background-color: #7ba591;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 0.6rem 1.2rem;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 2rem;
+      display: inline-block;
+    }
+    button.back-btn:hover {
       background-color: #5c7a6a;
     }
     footer {
@@ -71,22 +87,53 @@
   <header>
     <h1>Let Me Help Career and Life Coaching</h1>
     <img src="images/logo.png" alt="Let Me Help Career Coaching Logo" class="logo" />
-    <p>Helping you move forward in your life – with clarity, confidence, and care.</p>
+    <p>Your go-to support for career change, job search and life coaching.</p>
   </header>
 
   <section>
-    <h2>💡 Career Tips and Advice</h2>
-    <p>Explore our practical career tips to support you with job applications, interviews, confidence-building, and more. Click a tip below to read it in full.</p>
+    <button class="back-btn" onclick="window.location.href='index.html'">🏠 Back to Home</button>
 
-    <div class="button-list">
-      <a href="tip-get-your-name-noticed.html" class="tip-button">Get Your Name Noticed</a>
-     <a href="tip-follow-up-applications.html" class="tip-button">Follow Up Applications</a>
- <!-- Add more tip buttons here as you create more pages -->
+    <h2>💡 Career Tips</h2>
+
+    <div>
+      <button onclick="showTip(0)">Get Your Name Noticed</button>
+      <button onclick="showTip(1)">Follow Up Smartly</button>
+      <!-- Add more buttons here as you add more tips -->
+    </div>
+
+    <div id="tip-content">
+      <!-- Tip content appears here -->
     </div>
   </section>
 
   <footer>
     &copy; 2025 Let Me Help Career and Life Coaching
   </footer>
+
+  <script>
+    const tips = [
+      `1. Research the employer. Find the job on their own website and apply directly there if possible.\n
+2. Make contact before applying. Find a question to ask about the role and call the recruiter or hiring manager. Be friendly, ask your question, and make sure to give your name clearly.\n
+3. Follow up after applying. Ask for an email address to confirm they’ve received your application—or send your CV and cover letter directly to them, if appropriate.\n
+4. Be proactive with communication. After sending your application, follow up once to check it has been received. Use names where possible.\n
+5. Make a follow-up call. After the application deadline, make a polite follow-up call to ask about the status of your application. Be positive and confident.\n
+6. Stay professional throughout. Smile on the phone (people can hear it!). Make notes after each call and remember the names of those you speak with.\n
+\nThese small actions can help you stand out in a crowded job market. Employers appreciate polite, proactive candidates—so don't be afraid to get your name out there!`,
+
+      `Following up on your application demonstrates your interest and professionalism. After the deadline, give it a few days, then call or email to check the status. Remember to:\n
+- Be polite and positive.\n
+- Mention your name and the job you applied for.\n
+- Ask if there’s any additional information they need.\n
+- Thank them for their time.\n
+\nThis can help keep you top of mind and show your enthusiasm for the role.`
+    ];
+
+    function showTip(index) {
+      document.getElementById('tip-content').innerText = tips[index];
+    }
+
+    // Show first tip by default
+    showTip(0);
+  </script>
 </body>
 </html>
