@@ -39,29 +39,6 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
-    button {
-      padding: 0.5rem 1rem;
-      margin-right: 0.5rem;
-      margin-bottom: 1rem;
-      border-radius: 5px;
-      border: none;
-      background-color: #7ba591;
-      color: white;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-    button:hover {
-      background-color: #5c7a6a;
-    }
-    #tip-content {
-      font-size: 1.2rem;
-      line-height: 1.5;
-      color: #3e6259;
-      font-weight: bold;
-      margin-top: 1rem;
-      white-space: pre-wrap;
-      min-height: 200px; /* optional: gives space so page doesn't jump */
-    }
     button.back-btn {
       background-color: #7ba591;
       color: white;
@@ -72,9 +49,25 @@
       font-size: 1rem;
       margin-bottom: 1.5rem;
       display: inline-block;
+      text-decoration: none;
+      text-align: center;
     }
     button.back-btn:hover {
       background-color: #5c7a6a;
+    }
+    h2 {
+      color: #2e4a3f;
+      margin-bottom: 1rem;
+    }
+    p, ul {
+      font-size: 1.1rem;
+      color: #3e6259;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    strong {
+      font-weight: bold;
     }
     footer {
       text-align: center;
@@ -92,46 +85,26 @@
   </header>
 
   <section>
-    <button class="back-btn" onclick="window.location.href='index.html'">🏠 Back to Home</button>
+    <a href="index.html" class="back-btn" role="button">🏠 Back to Home</a>
 
-    <h2>💡 Career Tips</h2>
+    <h2>💡 Career Tip: Get Your Name Noticed</h2>
 
-    <div>
-      <button onclick="showTip(0)">Get Your Name Noticed</button>
-      <button onclick="showTip(1)">Follow Up Smartly</button>
-      <!-- Add more buttons here as you add more tips -->
-    </div>
+    <p>Getting your name known by a potential employer at least three times during your job application process can really boost your chances. Here’s how:</p>
 
-    <div id="tip-content">
-      <!-- Tip content will appear here only after button click -->
-    </div>
+    <ul>
+      <li><strong>Research the employer.</strong> Find the job on their own website and apply directly there if possible.</li>
+      <li><strong>Make contact before applying.</strong> Find a question to ask about the role and call the recruiter or hiring manager. Be friendly, ask your question, and make sure to give your name clearly.</li>
+      <li><strong>Follow up after applying.</strong> Ask for an email address to confirm they’ve received your application—or send your CV and cover letter directly to them, if appropriate.</li>
+      <li><strong>Be proactive with communication.</strong> After sending your application, follow up once to check it has been received. Use names where possible.</li>
+      <li><strong>Make a follow-up call.</strong> After the application deadline, make a polite follow-up call to ask about the status of your application. Be positive and confident.</li>
+      <li><strong>Stay professional throughout.</strong> Smile on the phone (people can hear it!). Make notes after each call and remember the names of those you speak with.</li>
+    </ul>
+
+    <p>These small actions can help you stand out in a crowded job market. Employers appreciate polite, proactive candidates—so don't be afraid to get your name out there!</p>
   </section>
 
   <footer>
     &copy; 2025 Let Me Help Career and Life Coaching
   </footer>
-
-  <script>
-    const tips = [
-      `1. Research the employer. Find the job on their own website and apply directly there if possible.\n
-2. Make contact before applying. Find a question to ask about the role and call the recruiter or hiring manager. Be friendly, ask your question, and make sure to give your name clearly.\n
-3. Follow up after applying. Ask for an email address to confirm they’ve received your application—or send your CV and cover letter directly to them, if appropriate.\n
-4. Be proactive with communication. After sending your application, follow up once to check it has been received. Use names where possible.\n
-5. Make a follow-up call. After the application deadline, make a polite follow-up call to ask about the status of your application. Be positive and confident.\n
-6. Stay professional throughout. Smile on the phone (people can hear it!). Make notes after each call and remember the names of those you speak with.\n
-\nThese small actions can help you stand out in a crowded job market. Employers appreciate polite, proactive candidates—so don't be afraid to get your name out there!`,
-
-      `Following up on your application demonstrates your interest and professionalism. After the deadline, give it a few days, then call or email to check the status. Remember to:\n
-- Be polite and positive.\n
-- Mention your name and the job you applied for.\n
-- Ask if there’s any additional information they need.\n
-- Thank them for their time.\n
-\nThis can help keep you top of mind and show your enthusiasm for the role.`
-    ];
-
-    function showTip(index) {
-      document.getElementById('tip-content').innerText = tips[index];
-    }
-  </script>
 </body>
 </html>
