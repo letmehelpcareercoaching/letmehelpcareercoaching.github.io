@@ -88,10 +88,31 @@
       padding: 2rem 1rem;
       color: #777;
     }
-    /* Hidden SEO keywords */
     .seo-hidden {
       display: none;
       visibility: hidden;
+    }
+
+    /* Testimonial styling (new) */
+    .hero-testimonial {
+      margin-top: 1.5rem;
+      padding: 1rem 1.5rem;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 8px;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .testimonial-text {
+      font-style: italic;
+      color: #2e4a3f;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .testimonial-author {
+      font-size: 0.9rem;
+      color: #3e6259;
     }
   </style>
 </head>
@@ -100,13 +121,26 @@
     <h1>Let Me Help Career and Life Coaching</h1>
     <img src="images/logo.png" alt="Let Me Help Career Coaching Logo" class="logo">
     <p>Helping you move forward in your life – with clarity, confidence, and care. Serving Ramsbottom, Bury, Bolton, and Greater Manchester.</p>
-       <p style="text-align:center;">
-  <a href="about.html">
-    <button style="background-color:#7ba591;color:white;border:none;border-radius:6px;padding:0.6rem 1.2rem;font-size:1rem;cursor:pointer;">
-      👤 About Me
-    </button>
-  </a>
-</p>
+
+    <div class="hero-testimonial">
+      <p class="testimonial-text">
+        “Working with Janine during my career change was truly life-changing. We looked holistically at all areas of my life, including my skills, health, and work and life experience, which helped me realise I have autonomy and far more options than I ever thought.
+        <br><br>
+        Janine is an excellent life coach and career coach. I now know what I want in life and no longer feel stuck. I have a new CV, feel confident in how to job search effectively, and have already been applying for roles. I also have an interview coming up, which Janine has helped me prepare for.
+        <br><br>
+        All of this in just six sessions. I would highly recommend her.”
+      </p>
+      <p class="testimonial-author">– Sarah H, Rawtenstall</p>
+    </div>
+
+    <p style="text-align:center;">
+      <a href="about.html">
+        <button style="background-color:#7ba591;color:white;border:none;border-radius:6px;padding:0.6rem 1.2rem;font-size:1rem;cursor:pointer;">
+          👤 About Me
+        </button>
+      </a>
+    </p>
+
     <a href="blog-hints-tips.html" class="button">Career Tips &amp; Advice</a>
   </header>
 
@@ -139,7 +173,6 @@
     <p>Calls usually last 10 minutes. I will provide you with an overview of what I offer and discuss your unique needs, wants and goals.</p>
   </section>
 
-  <!-- Contact form restored at bottom -->
   <section>
     <form action="https://formspree.io/f/xvgrnjja" method="POST">
       <label for="name">Your Name</label>
@@ -159,7 +192,6 @@
     &copy; 2025 Let Me Help Career and Life Coaching | Career Coach & Life Coach in Ramsbottom, Bury, Bolton, Greater Manchester
   </footer>
 
-  <!-- Hidden SEO keywords block -->
   <div class="seo-hidden">
     Career coach Ramsbottom, life coaching Bury, CV help Bolton, interview preparation Greater Manchester, job search support Ramsbottom, career change advice Bury, employability coaching Bolton, confidence coaching Greater Manchester, professional coaching Ramsbottom.
   </div>
