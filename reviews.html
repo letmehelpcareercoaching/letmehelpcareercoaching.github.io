@@ -34,7 +34,6 @@
     }
     h2 {
       color: #3e6259;
-      margin-top: 0;
     }
     section {
       max-width: 800px;
@@ -59,13 +58,18 @@
       background-color: #5a7a66;
     }
 
-    /* Reviews styling */
+    .hero-tagline {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #2e4a3f;
+      margin-top: 1rem;
+    }
+
     .review-card {
-      background: #ffffff;
       border: 1px solid #e9eee9;
       border-radius: 10px;
       padding: 1.25rem 1.5rem;
-      margin: 1rem 0;
+      margin: 1.5rem 0;
       box-shadow: 0 2px 8px rgba(0,0,0,0.03);
     }
     .review-text {
@@ -73,29 +77,25 @@
       font-weight: bold;
       color: #2e4a3f;
       margin: 0 0 0.75rem 0;
-      line-height: 1.7;
       font-size: 1.05rem;
+      line-height: 1.7;
     }
-    .review-meta {
+    .review-author {
+      font-size: 0.95rem;
       color: #3e6259;
       font-style: italic;
       font-weight: bold;
-      font-size: 0.95rem;
       margin: 0;
-    }
-    .small-note {
-      color: #555;
-      margin-top: 0.75rem;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <h1>Let Me Help Career and Life Coaching</h1>
     <img src="images/logo.png" alt="Let Me Help Career Coaching Logo" class="logo">
 
-    <p style="font-weight:bold;font-size:1.4rem;color:#2e4a3f;margin-top:1rem;">
+    <p class="hero-tagline">
       Helping you move forward in your life – with clarity, confidence, and care. Serving Ramsbottom, Bury, Bolton, and Greater Manchester.
     </p>
 
@@ -110,9 +110,9 @@
 
   <section>
     <h2>⭐ Customer Reviews</h2>
-    <p class="small-note">Here’s what clients have shared about working with me. (More will be added as they come in.)</p>
+    <p>Here’s what clients have shared about working with me.</p>
 
-    <!-- REVIEW 1 (example / you can replace text) -->
+    <!-- Review 1 -->
     <div class="review-card">
       <p class="review-text">
         “Working with Janine during my career change was truly life-changing. We looked holistically at all areas of my life, including my skills, health, and work and life experience, which helped me realise I have autonomy and far more options than I ever thought.
@@ -121,13 +121,19 @@
         <br><br>
         All of this in just six sessions. I would highly recommend her.”
       </p>
-      <p class="review-meta">– Sarah H, Rawtenstall</p>
+      <p class="review-author">– Sarah H, Rawtenstall</p>
     </div>
 
-    <!-- REVIEW 2 (placeholder) -->
+    <!-- Review 2 -->
     <div class="review-card">
-      <p class="review-text">“(Your next review will go here.)”</p>
-      <p class="review-meta">– Name, Location</p>
+      <p class="review-text">
+        “I was hoping to get help with interview preparation and knowing how to answer the different interview questions I would be asked.
+        <br><br>
+        I found the expertise of answering such questions helpful and I found the information and research compiled for the role to be helpful for interview preparation.
+        <br><br>
+        I now feel more comfortable answering interview questions and believe if I’m not successful with the role I now know what information is needed for future roles that I apply for.”
+      </p>
+      <p class="review-author">– Client</p>
     </div>
 
     <p style="text-align:center;margin-top:1.5rem;">
@@ -137,4 +143,3 @@
 
 </body>
 </html>
-
